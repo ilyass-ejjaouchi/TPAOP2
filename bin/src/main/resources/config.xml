@@ -6,7 +6,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="compte" class="com.tpaop.beans.Compte"></bean>
 	<bean id="beforeAspect" class="com.tpaop.aspect.BeforeAspect" />
 	<bean id="aroundAspect" class="com.tpaop.aspect.AroundAspect" />
-	<bean id="afterAspect" class="com.tpaop.aspect.AfterAspect" />
 	<bean id="compteProxy"
 		class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="proxyInterfaces">
@@ -19,7 +18,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 			<list>
 				<value>beforeAspect</value>
 				<value>aroundAspect</value>
-				<value>afterAspect</value>
 			</list>
 		</property>
 	</bean>
